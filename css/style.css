@@ -4875,15 +4875,15 @@ footer {
     position: relative;
 }
 
-.form_steps:after {
-    content: '';
-    border: 1px dashed #D4D4D4;
+.line {
+    border: 1px dashed #d4d4d4;
     position: absolute;
     top: 50%;
-    left: 5px;
-    right: 5px;
+    left: 10px;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: -1;
 }
 
 .form_steps ul {
@@ -5067,18 +5067,6 @@ footer {
         max-width: 200px;
     }
 
-    .form_steps:after {
-        content: none;
-    }
-
-    .form_steps ul {
-        display: inherit;
-    }
-
-    .form_steps ul li {
-        display: inline-block;
-    }
-
     .form_steps ul li a {
         font-size: 16px;
         color: #838383;
@@ -5112,6 +5100,20 @@ footer {
 
     #pre_registration_form .form_button button {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .line {
+        display: none;
+    }
+
+    .form_steps ul {
+        display: inherit;
+    }
+
+    .form_steps ul li {
+        display: inline-block;
     }
 }
 
