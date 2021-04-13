@@ -1200,6 +1200,7 @@ header {}
     font-size: 21px;
     color: #fff;
     line-height: 1.4;
+    font-weight: 300;
 }
 
 .verification_code {
@@ -4849,11 +4850,11 @@ footer {
 -----------------------------------------------*/
 
 
-#pre_registration_form {
+.pre_registration {
     margin: 70px 0;
 }
 
-#pre_registration_form h1 {
+.pre_registration h1 {
     font-weight: 700;
     font-size: 40px;
     color: #000;
@@ -4863,12 +4864,29 @@ footer {
     padding-top: 60px;
 }
 
-#pre_registration_form p {
+.pre_registration h3 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.pre_registration .budget h3 {}
+
+.pre_registration .switch_toggle h3 {
+    padding-bottom: 0;
+}
+
+.pre_registration p {
     font-weight: 300;
     font-size: 20px;
     color: #000;
     text-align: center;
     letter-spacing: -1px;
+    line-height: 1.3;
 }
 
 .form_steps {
@@ -4907,48 +4925,173 @@ footer {
     border: .5px solid #EE9C80;
 }
 
-#pre_registration_form form {
+.pre_registration form {
     margin-top: 50px;
 }
 
-#pre_registration_form .form-control {
+.pre_registration .occupation {
+    margin-right: 100px;
+    position: relative;
+}
+
+.pre_registration .occupation button {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    background: #E14C19;
+    right: -80px;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.pre_registration .form-control {
     height: 70px;
     padding-left: 30px;
     padding-right: 20px;
     font-size: 22px;
     font-weight: 300;
-    color: #E14C19;
+    color: #EE9C80;
     border: .5px solid #D4D4D4;
     border-radius: 20px;
     margin-bottom: 30px;
 }
 
-#pre_registration_form textarea.form-control {
+.pre_registration textarea.form-control {
     height: 250px;
     padding-top: 20px;
 }
 
-#pre_registration_form .form-control::placeholder {
+.pre_registration .form-control::placeholder {
     color: #EE9C80;
     font-weight: 300;
 }
 
-#pre_registration_form .image_upload label {
+.pre_registration .address span {
+    position: relative;
+    display: block;
+}
+
+.pre_registration .address img {
+    position: absolute;
+    width: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pre_registration .address .form-control {
+    text-align: center;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #878787;
+    border-radius: 0;
+    color: #D83510;
+    padding-right: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.pre_registration .address .form-control::placeholder {
+    color: #D83510;
+    font-weight: 400;
+}
+
+.pre_registration .address p {
+    color: #E14C19;
+    margin-bottom: 40px;
+}
+
+.pre_registration .certificate label {
+    position: relative;
+    color: #7A7A7A;
+    border: 1px solid #7A7A7A;
+    padding: 12px 40px 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.pre_registration .certificate label a {
+    position: absolute;
+    font-size: 20px;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    border: 1px solid #7A7A7A;
+    border-radius: 20px;
+    color: #000;
+    background: #fff;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pre_registration select {
+    /*
+    -webkit-appearance: none;
+    position: relative;
+*/
+}
+
+/*
+.pre_registration select:after {
+    content: "\f13a";
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    font-size: 18px;
+    color: red;
+    pointer-events: none;
+}
+*/
+
+.pre_registration .image_upload label {
     border: .5px solid #D4D4D4;
     padding: 20px 50px;
     border-radius: 10px;
     margin-bottom: 50px;
 }
 
-#pre_registration_form .image_upload img {
+.pre_registration .image_upload img {
     width: 100px;
 }
 
-#pre_registration_form .image_upload input {
+.pre_registration .image_upload input {
     display: none;
 }
 
-#pre_registration_form .form_button button {
+.pre_registration .photo_upload .photobox {
+    padding: 0 30px 30px;
+    border-radius: 20px;
+    border: 1px solid #d4d4d4;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 350px;
+}
+
+.pre_registration .photo_upload .photobox .img {
+    margin-top: 30px;
+}
+
+
+.pre_registration .budget .button {
+    text-align: center;
+    background: orange;
+}
+
+.pre_registration .form_button {
+    padding-top: 40px;
+}
+
+.pre_registration .form_button button {
     font-size: 22px;
     border: 1px solid #5B5B5B;
     padding: 12px 50px 15px;
@@ -4956,13 +5099,17 @@ footer {
     margin: 0 10px 10px;
 }
 
-#pre_registration_form .form_button button.w_btn {
+.pre_registration .form_button button a {
+    color: inherit;
+}
+
+.pre_registration .form_button button.w_btn {
     background: #fff;
     padding-left: 50px;
     position: relative;
 }
 
-#pre_registration_form .form_button button.w_btn:after {
+.pre_registration .form_button button.w_btn:after {
     content: '\f053';
     position: absolute;
     font-size: 16px;
@@ -4976,7 +5123,7 @@ footer {
     line-height: 1;
 }
 
-#pre_registration_form .form_button button.b_btn {
+.pre_registration .form_button button.b_btn {
     background: #1A32DF;
     color: #fff;
     border: 1px solid #1A32DF;
@@ -4987,21 +5134,37 @@ footer {
     -ms-transition: all linear .3s;
 }
 
-#pre_registration_form .form_button button.b_btn:hover {
+.pre_registration .form_button button.b_btn:hover {
     background: #fff;
     color: #1A32DF;
 }
 
-#pre_registration_form .switch_toggle {
+.pre_registration .form_button button.or_btn {
+    background: #E14C19;
+    color: #fff;
+    border: 1px solid #E14C19;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.pre_registration .form_button button.or_btn:hover {
+    background: #fff;
+    color: #E14C19;
+}
+
+.pre_registration .switch_toggle {
     padding-top: 30px;
     margin-bottom: 30px;
 }
 
-#pre_registration_form .switch_toggle p {
+.pre_registration .switch_toggle p {
     text-align: center;
 }
 
-#pre_registration_form .switch_toggle .switch {
+.pre_registration .switch_toggle .switch {
     position: relative;
     display: block;
     width: 80px;
@@ -5009,13 +5172,13 @@ footer {
     margin: 20px auto 0;
 }
 
-#pre_registration_form .switch_toggle .switch input {
+.pre_registration .switch_toggle .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-#pre_registration_form .switch_toggle .slider {
+.pre_registration .switch_toggle .slider {
     position: absolute;
     cursor: pointer;
     height: 35px;
@@ -5025,7 +5188,7 @@ footer {
     transition: .4s;
 }
 
-#pre_registration_form .switch_toggle .slider:before {
+.pre_registration .switch_toggle .slider:before {
     position: absolute;
     content: "";
     height: 28px;
@@ -5039,26 +5202,352 @@ footer {
     transition: .4s;
 }
 
-#pre_registration_form .switch_toggle input:focus + .slider {
+.pre_registration .switch_toggle input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
 }
 
-#pre_registration_form .switch_toggle input:checked + .slider:before {
+.pre_registration .switch_toggle input:checked + .slider:before {
     transform: translate(43px, -50%);
 }
 
-#pre_registration_form .switch_toggle input:checked + .slider {
+.pre_registration .switch_toggle input:checked + .slider {
     background-color: #E14C19;
 }
 
-#pre_registration_form .switch_toggle .slider.round {
+.pre_registration .switch_toggle .slider.round {
     border-radius: 34px;
 }
 
-#pre_registration_form .switch_toggle .slider.round:before {
+.pre_registration .switch_toggle .slider.round:before {
     border-radius: 50%;
 }
 
+
+/*--------Pre registration 3--------*/
+
+.sub_category h3 {
+    padding-bottom: 30px;
+}
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.styled-checkbox + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: white;
+    border: 1px solid #D5D5D5;
+    border-radius: 20px;
+}
+
+.styled-checkbox:focus + label {
+    color: #f35429;
+}
+
+.styled-checkbox:checked + label {
+    color: #f35429;
+}
+
+.styled-checkbox:focus + label:before {}
+
+.styled-checkbox:checked + label:before {
+    background: #f35429;
+    border: 1px solid #f35429;
+}
+
+.styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .sub_category ul {
+        text-align: center;
+    }
+
+    .styled-checkbox + label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .sub_category h3 {
+        padding-bottom: 15px;
+    }
+}
+
+.pre_registration .budget .nav-tabs .nav-item {
+    width: 32%;
+    margin-bottom: 10px;
+}
+
+.pre_registration .budget .nav-tabs .nav-item .nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    background: #fff;
+    color: #CACACB;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    padding: 17px 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.pre_registration .budget .nav-tabs .nav-item .nav-link.active,
+.pre_registration .budget .nav-tabs .nav-item .nav-link:hover {
+    background: #E14C19;
+    color: #fff;
+    border: 1px solid #E14C19;
+}
+
+@media screen and (max-width: 991px) {
+
+    .pre_registration .budget .nav-tabs .nav-item .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .pre_registration .budget .nav-tabs .nav-item .nav-link {
+        font-size: 16px;
+        padding: 12px 20px 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .pre_registration .budget .nav-tabs {
+        display: inherit;
+    }
+
+    .pre_registration .budget .nav-tabs .nav-item {
+        width: auto;
+        display: inline-block;
+    }
+
+    .pre_registration .budget .nav-tabs .nav-item .nav-link {
+        font-size: 14px;
+    }
+}
+
+
+/*--------Pre registration 4--------*/
+
+
+.link_social .fb,
+.link_social .google {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.link_social label img {
+    height: 25px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link_social input[type="radio"]:checked,
+.link_social input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.link_social input[type="radio"]:checked + label,
+.link_social input[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    background: #CACACB;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link_social input[type="radio"]:checked + label:before,
+.link_social input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border: 1px solid #707070;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.link_social input[type="radio"]:checked + label:after,
+.link_social input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: #D83510;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.link_social input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.link_social input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .link_social .fb,
+    .link_social .google {
+        width: 280px;
+    }
+
+    .link_social input[type="radio"]:checked + label,
+    .link_social input[type="radio"]:not(:checked) + label {
+        position: relative;
+        padding-left: 70px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        width: 100%;
+        cursor: pointer;
+        display: inline-block;
+        color: #fff;
+        background: #CACACB;
+        border-radius: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .link_social label img {
+        height: 20px;
+        right: 25px;
+    }
+}
+
+/*--------Pre registration 5--------*/
+
+.verify {
+    margin-bottom: 20px;
+}
+
+.verify_1 {
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 30px;
+}
+
+.verify button {
+    background: #fff;
+    font-size: 20px;
+    border: 1px solid #7A7A7A;
+    padding: 10px 40px 12px;
+    border-radius: 20px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.verify h4 {
+    font-size: 22px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.verify h4 i {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 25px;
+    background: #808080;
+    color: #fff
+}
+
+.verify_left p {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .verify h4 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .verify_left.mt-30 {
+        margin-top: 10px;
+    }
+
+    .verify_right img {
+        width: 70px;
+    }
+
+    .verify_right {
+        text-align: center;
+    }
+
+    .verify_left p {
+        padding-bottom: 10px;
+    }
+
+    .verify h4 i {
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .verify button {
+        font-size: 12px;
+    }
+}
 
 
 @media screen and (max-width: 1549px) {
@@ -5078,27 +5567,33 @@ footer {
         margin: 0 10px 15px 0;
     }
 
-    #pre_registration_form h1 {
+    .pre_registration h1 {
         font-size: 32px;
         padding-bottom: 20px;
         padding-top: 40px;
     }
 
-    #pre_registration_form p {
+    .pre_registration p {
         font-size: 18px;
     }
 
-    #pre_registration_form .form-control {
+    .pre_registration .form-control {
         height: 60px;
         font-size: 18px;
     }
 
-    #pre_registration_form .switch_toggle {
+    .pre_registration .occupation button {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .pre_registration .switch_toggle {
         padding-top: 0;
         margin-bottom: 30px;
     }
 
-    #pre_registration_form .form_button button {
+    .pre_registration .form_button button {
         font-size: 18px;
     }
 }
@@ -5118,7 +5613,8 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
-    #pre_registration_form {
+
+    .pre_registration {
         margin: 50px 0;
     }
 
@@ -5129,18 +5625,22 @@ footer {
         margin: 0 6px 15px 0;
     }
 
-    #pre_registration_form h1 {
+    .pre_registration h1 {
         font-size: 26px;
         padding-bottom: 15px;
         padding-top: 30px;
     }
 
-    #pre_registration_form p {
+    .pre_registration h3 {
+        font-size: 20px;
+    }
+
+    .pre_registration p {
         font-size: 14px;
         letter-spacing: normal;
     }
 
-    #pre_registration_form .form-control {
+    .pre_registration .form-control {
         height: 50px;
         padding-left: 15px;
         padding-right: 15px;
@@ -5148,27 +5648,93 @@ footer {
         margin-bottom: 20px;
     }
 
-    #pre_registration_form textarea.form-control {
+    .pre_registration .occupation {
+        margin-right: 60px;
+    }
+
+    .pre_registration .occupation button {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        right: -60px;
+    }
+
+    .pre_registration textarea.form-control {
         height: 170px;
         padding-top: 15px;
     }
 
-    #pre_registration_form .image_upload label {
-        margin-bottom: 30px;
+    .pre_registration .image_upload label {
+        margin-bottom: 20px;
+        padding: 12px 30px;
     }
 
-    #pre_registration_form .image_upload img {
+    .pre_registration .certificate label {
+        font-size: 14px;
+    }
+
+    .pre_registration .image_upload img {
         width: 50px;
     }
 
-    #pre_registration_form .form_button button {
+    .pre_registration .photo_upload .photobox {
+        padding: 0 15px 15px;
+        height: 300px;
+    }
+
+    .pre_registration .form_button button {
         font-size: 14px;
         padding: 10px 40px 12px;
         margin: 0 10px 10px;
     }
+
+    .pre_registration .address img {
+        width: 20px;
+    }
 }
 
-@media screen and (min-width: 767px) and (max-width: 767px) {}
+
+/*------Pre Registration Modal------*/
+
+.pre_register_modal .modal-content {
+    background: #E14C19;
+}
+
+.pre_register_modal .modal-content img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.pre_register_modal .modal-content .modal-body h2 {
+    color: #fff;
+}
+
+.pre_register_modal .modal-content .modal-body h2 span {
+    font-weight: 400;
+}
+
+.pre_register_modal .modal-content .modal-body button {
+    margin-top: 20px;
+    font-weight: 400;
+    background: #1A32DF;
+}
+
+.pre_register_modal .modal-content .modal-body button:hover {
+    color: #1A32DF;
+    background: #fff
+}
+
+@media screen and (max-width: 767px) {
+    .pre_register_modal .modal-content img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .pre_register_modal .modal-content img {
+        width: 60px;
+    }
+}
 
 /* 17.-------------------------------------------
                     Comingsoon form Section
