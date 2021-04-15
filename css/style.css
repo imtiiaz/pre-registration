@@ -5166,10 +5166,10 @@ footer {
 
 .pre_registration .switch_toggle .switch {
     position: relative;
-    display: block;
     width: 80px;
     height: 35px;
     margin: 20px auto 0;
+    display: block;
 }
 
 .pre_registration .switch_toggle .switch input {
@@ -5220,6 +5220,42 @@ footer {
 
 .pre_registration .switch_toggle .slider.round:before {
     border-radius: 50%;
+}
+
+
+/*--------Pre registration 2--------*/
+
+.pre_registration-2 .switch_toggle .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pre_registration-2 .switch_toggle .switch {
+    margin: 0;
+}
+
+.pre_registration-2 .switch_toggle .toggle p {
+    font-size: 14px !important;
+    letter-spacing: normal !important;
+    margin-left: 10px !important;
+}
+
+
+@media screen and (max-width: 575px) {
+    .pre_registration-2 .switch_toggle .toggle {
+        display: inherit;
+        margin-top: 20px;
+    }
+    .pre_registration-2 .switch_toggle .switch {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .pre_registration-2 .switch_toggle .toggle p {
+        font-size: 12px !important;
+    }
 }
 
 
@@ -5605,6 +5641,7 @@ footer {
 
     .form_steps ul {
         display: inherit;
+        text-align: center;
     }
 
     .form_steps ul li {
